@@ -1,1 +1,1 @@
-(https://bakedpotato02.github.io/2025W_326_GR03/)[Website]
+[Website](https://bakedpotato02.github.io/2025W_326_GR03/)

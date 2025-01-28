@@ -1,0 +1,217 @@
+*{
+    font-family: 'Fira Sans', serif;
+    color: white;
+    content-visibility: center;
+    margin: 0;
+}
+
+.h1{
+    margin: 20px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-color: #1b1b1b;
+    text-align: left;
+    /* background-image: url('gnustep_whale.PNG'); */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0));
+    pointer-events: none;
+    z-index: 1;
+}
+
+.members{
+    flex: 1;
+    justify-content: left;
+}
+
+/* 
+.top-bar {
+    background-color: #111111;
+    border-bottom: 2px solid rgb(228, 228, 228);
+    border-radius: 0;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+*/
+
+.navbar {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0));
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    z-index: 10;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    padding: 5px;
+    transition: box-shadow 0.5s ease;
+    margin-right: 20px;
+}
+
+.navbar-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.group-name {
+    font-weight: 1000;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.group-members {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.navbar img:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.timeline {
+    position: relative; /* Changed from absolute to relative */
+    margin-top: auto; /* Pushes the timeline to the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 800px;
+    padding: 10px;
+    background: none;
+    border-radius: 10px;
+    z-index: 3;
+    animation: fadeIn 4s ease;
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
+.milestone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.label {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.point-line {
+    margin-top: 32.5px;
+    width: 2px;
+    height: 20px;
+    background-color: white;
+    z-index: 2;
+}
+
+.a0 {
+    animation: blink 2s infinite;
+}
+
+.l1 {
+    color: #dd5e5e;
+}
+
+.links {
+    text-align: left;
+    margin-top: 140px;
+    margin-left: 30px;
+}
+
+.pdf {
+    margin-top: 20px;
+    text-align: center;
+    z-index: 6; /* Increased z-index */
+}
+
+/*
+
+.links p {
+    margin: 10px 0;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #dd5e5e;
+}
+
+*/
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
